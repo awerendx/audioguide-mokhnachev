@@ -7,7 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Аудиогид: Архитектурное наследие семьи Вильнеров в Минусинске</title>
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VRaD8mD3QY-FGS-c39uHDs98MB76Lfzkq8ahyUOqOG8EKrCnA8PHxC7M8KxhvSVsoertakVMUSr8paX0JbDOn3cS_Tw_sM5DkoW8xMZ6hjmHZ7CI9zMijQJzMHX36cHea4tkzqlmPfdnAnICuoCB8OMNxvNo2zMw6K157cw_EgsV8ONNnBsaK7ijN0ihs0ToQ6q44Ln5WagMOuSGGZmyUgYA32z0IxwF-ICn-9twauRj8jmi1_N1mVf7uhaUKYWVtejxMBYkYUo_e4WPXXZ3ixX3JodNrMznjNvpH-m8c0tbTiThw_aA_pNA5aDme8QfAgkG_muCDbdJvQ9W4NdefA" charset="UTF-8"></script><style>
+  <meta name="theme-color" content="#07090e">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fff3d1'/%3E%3Cstop offset='50%25' stop-color='%23f3c982'/%3E%3Cstop offset='100%25' stop-color='%23b37d32'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230f131d'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='2' stroke-opacity='0.6'/%3E%3Cpath d='M12 32a20 20 0 0 1 40 0' fill='none' stroke='url(%23g)' stroke-width='3.5' stroke-linecap='round'/%3E%3Crect x='9' y='30' width='6' height='12' rx='3' fill='url(%23g)'/%3E%3Crect x='49' y='30' width='6' height='12' rx='3' fill='url(%23g)'/%3E%3Cpath d='M20 48V30l12-9 12 9v18H20z' fill='none' stroke='url(%23g)' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpath d='M26 48V36h4v12m4 0V36h4v12M17 48h30' stroke='url(%23g)' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f131d'/%3E%3Cpath d='M12 32a20 20 0 0 1 40 0' fill='none' stroke='%23f3c982' stroke-width='3.5' stroke-linecap='round'/%3E%3Crect x='9' y='30' width='6' height='12' rx='3' fill='%23d4a359'/%3E%3Crect x='49' y='30' width='6' height='12' rx='3' fill='%23d4a359'/%3E%3Cpath d='M20 48V30l12-9 12 9v18H20z' fill='none' stroke='%23f3c982' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpath d='M17 48h30' stroke='%23d4a359' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
     :root {
       --bg-dark: #07090e;
       --bg-surface: #0f131d;
@@ -5484,6 +5487,40 @@
       }
     }
 
+  
+    /* === ИКОНКА-ЭМБЛЕМА ПРОЕКТА В ШАПКЕ САЙТА === */
+    .hero-emblem {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 12px;
+      border-radius: 18px;
+      background: radial-gradient(circle at 30% 25%, rgba(243, 201, 130, 0.22), rgba(15, 19, 29, 0.95));
+      border: 1.5px solid rgba(243, 201, 130, 0.5);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 163, 89, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-light);
+      transition: transform 0.3s var(--ease-out), border-color 0.3s ease;
+    }
+    .hero-emblem:hover {
+      transform: translateY(-2px) scale(1.04);
+      border-color: var(--accent-light);
+    }
+    .hero-emblem svg {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+    body.a11y-mode .hero-emblem {
+      background: var(--a11y-bg) !important;
+      color: var(--a11y-text) !important;
+      border: 2px solid var(--a11y-border) !important;
+      box-shadow: none !important;
+    }
+    body.a11y-mode.images-off .hero-emblem {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -5562,6 +5599,18 @@
     </div>
     <!-- ШАПКА ПРОЕКТА (МИНИМАЛИСТИЧНЫЙ ГЛАВНЫЙ ЭКРАН) -->
     <div class="profile-card">
+      <div class="hero-emblem" aria-hidden="true" title="Аудиогид: Архитектурное наследие семьи Вильнеров">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 33a20 20 0 0 1 40 0" />
+          <rect x="8" y="31" width="6" height="12" rx="3" fill="currentColor" />
+          <rect x="50" y="31" width="6" height="12" rx="3" fill="currentColor" />
+          <path d="M20 50V31l12-9 12 9v19" />
+          <line x1="26" y1="50" x2="26" y2="36" />
+          <line x1="32" y1="50" x2="32" y2="36" />
+          <line x1="38" y1="50" x2="38" y2="36" />
+          <line x1="16" y1="50" x2="48" y2="50" />
+        </svg>
+      </div>
       <div class="badge">✨ Пешеходный аудиогид • г. Минусинск</div>
       <h1>Архитектурное наследие семьи Вильнеров</h1>
       <div class="hero-ornament" aria-hidden="true">
